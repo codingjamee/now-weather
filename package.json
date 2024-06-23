@@ -1,0 +1,19 @@
+{
+  "name": "now-weather",
+  "version": "1.0.0",
+  "description": "\"날씨 정보 앱\"",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingjamee/now-weather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingjamee/now-weather/issues"
+  },
+  "homepage": "https://github.com/codingjamee/now-weather#readme"
+}
