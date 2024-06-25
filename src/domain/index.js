@@ -1,2 +1,2 @@
-export {default as fetch} from './fetch';
-export {default as logic} from './logic';
+export { default as fetch } from "./fetch";
+export { default as mutateDomain } from "./mutateDomain";
