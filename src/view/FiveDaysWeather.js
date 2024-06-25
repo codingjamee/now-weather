@@ -4,10 +4,10 @@ import Card from "../templates/Card";
 import { HeaderTwo } from "../templates/Header";
 import { SubHeader } from "../templates/SubHeader";
 
-export default class Today extends Component {
+export default class FiveDays extends Component {
   setup() {
     //today데이터 가져올 함수 호출
-    fetchData.fetchToday();
+    fetchData.fetchFiveDays();
   }
   template() {
     const innerTemplate =
@@ -17,8 +17,8 @@ export default class Today extends Component {
   }
 
   setEvent() {
-    this.addEvent('click', '.card', ()=>{
-      //router이동 로직
-    })
+    this.addEvent("click", ".card", () => {
+      
+    });
   }
 }
