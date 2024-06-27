@@ -5,9 +5,12 @@ import { HeaderTwo } from "../templates/Header";
 import { SubHeader } from "../templates/SubHeader";
 
 export default class Today extends Component {
-  setup() {
+  async setup() {
     //today데이터 가져올 함수 호출
-    fetchData.fetchToday();
+    const { lat, lon } = getLocation();
+    const APIkey = process.env.APIkey;
+    const data = await fetchData.fetchToday({ lat, lon, APIkey });
+    this.state = data;
   }
   template() {
     const innerTemplate =
@@ -17,8 +20,9 @@ export default class Today extends Component {
   }
 
   setEvent() {
-    this.addEvent('click', '.card', ()=>{
+    this.addEvent("click", ".card", () => {
       //router이동 로직
-    })
+      
+    });
   }
 }

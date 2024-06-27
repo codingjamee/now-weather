@@ -1,12 +1,15 @@
 export default class Component {
   $target;
   state;
-  constructor($target) {
+  router;
+
+  constructor($target, router) {
     //인스턴스 생성시 실행.
     this.$target = $target;
     this.setup();
     this.render();
     this.setEvent();
+    this.router = router;
   }
 
   setup() {

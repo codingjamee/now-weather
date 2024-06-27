@@ -18,6 +18,10 @@ export default function createRouter() {
       window.addEventListener("hashchange", checkRoutes);
       checkRoutes();
     },
+
+    navigate(fragment) {
+      window.location.hash = fragment;
+    },
   };
 
   return router;

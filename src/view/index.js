@@ -1,1 +1,2 @@
-export {default as templates} from './templates';
+export { default as FiveDaysWeather } from "./FiveDaysWeather";
+export { default as TodayWeather } from "./TodayWeather";

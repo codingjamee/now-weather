@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/codingjamee/now-weather/issues"
   },
-  "homepage": "https://github.com/codingjamee/now-weather#readme"
+  "homepage": "https://github.com/codingjamee/now-weather#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }
