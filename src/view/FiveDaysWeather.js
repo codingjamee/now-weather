@@ -19,8 +19,4 @@ export default class FiveDays extends Component {
       SubHeader({ title: "2024년 1월 1일 11시 30분" });
     Card(innerTemplate);
   }
-
-  setEvent() {
-    this.addEvent("click", ".card", () => {});
-  }
 }
