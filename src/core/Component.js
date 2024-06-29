@@ -29,7 +29,6 @@ export default class Component {
   }
   setEvent(eventType, selector, callback) {
     //각 이벤트를 등록함
-    const children = [...this.$target.querySelectorAll(selector)];
     this.$target.addEventListener(eventType, (event) => {
       if (!event.target.closest(selector)) return false;
       callback(event);
@@ -39,12 +38,5 @@ export default class Component {
     //state변경해주는 메서드
     this.state = { ...this.state, ...newState };
     this.render();
-  }
-  addEvent(eventType, selector, callback) {
-    const children = [...this.$target.querySelectorAll(selector)];
-    this.$target.addEventListener(eventType, (event) => {
-      if (!event.target.closest(selector)) return false;
-      callback(event);
-    });
   }
 }
