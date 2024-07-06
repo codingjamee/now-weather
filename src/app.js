@@ -11,6 +11,7 @@ class App {
     const today = new Today($app, router);
     const fiveDays = new FiveDays($app, router);
     router
+      .addRoute(routes.home, today)
       .addRoute(routes.default, today)
       .addRoute(routes.fiveDays, fiveDays)
       .start();

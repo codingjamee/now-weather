@@ -4,6 +4,9 @@ import Card from "../templates/Card";
 import { HeaderTwo } from "../templates/Header";
 import { SubHeader } from "../templates/SubHeader";
 import { routes } from "../utils/constants";
+import { getLocation } from "../domain/mutateDomain";
+import dotenv from "dotenv";
+dotenv.config();
 
 export default class Today extends Component {
   async setup() {

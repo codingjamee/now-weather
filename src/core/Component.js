@@ -10,7 +10,7 @@ export default class Component {
     
     this.setup();
     this.render();
-    this.setEvent();
+    // this.setEvent();
   }
 
   setup() {
